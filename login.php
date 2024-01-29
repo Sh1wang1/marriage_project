@@ -1,4 +1,5 @@
 <?php  
+session_start();
 include("dbconnect.php");
 ?>
 <?php
@@ -11,7 +12,10 @@ while($row = mysqli_fetch_assoc($result))
 {
     if($row["uname"]==$un && $row["pass"]== $pd)
      {
+        $_SESSION['t1']=$un;
+        $_SESSION['t2']=$pd;
       header("location:indexc.html");
+
      }
 } 
 mysqli_close($conn);
