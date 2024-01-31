@@ -1,4 +1,4 @@
-<?php  
+<?php
 session_start();
 include("dbconnect.php");
 
@@ -21,7 +21,7 @@ if (isset($_POST['t1']) && isset($_POST['t2'])) {
         if ($oldPassword === $currentPassword) {
             // Update the password in the database
             $updateSql = "UPDATE user SET pass='$newPassword' WHERE uname='$username'";
-            
+
             if (mysqli_query($conn, $updateSql)) {
                 echo "Password updated successfully";
             } else {
