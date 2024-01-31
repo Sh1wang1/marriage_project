@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>registration form</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image:url("pp.avif");
+            background-repeat:no-repeat;
+            background-size:cover;
+            width: 100%;
+            /* background-position:center; */
+        }
+        .container{
+            margin-top: 150px;
+            background-color:rgba(0,0,0,0.5)
+        }
+        /* input{
+            max-width: 300px;
+            min-width: 300px;
+        } */
+        
+    </style>
+</head>
+<body>
+    <!-- <h1>Registration Form</h1> -->
+    <div class="container">
+        <h1>Registration Form</h1>
+    <form action="g.php" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <input type="text" class="form-control" name="q1" placeholder="Groom's Name:">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="q2" placeholder="Groom's Father Name:">
+        </div> 
+        <div class="form-group">
+            <input type="text" class="form-control" name="q3" placeholder="Groom's Mobile no.:">
+        </div>
+         <div class="form-group">
+            <input type="email" class="form-control" name="q4" placeholder="Groom's Emailid:">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="q5" placeholder="Groom's Address:">
+        </div> 
+        <div class="form-group">
+            <input type="text"  class="form-control" name="q6" placeholder="Religion">
+        </div>
+     
+        <div class="form-group">
+            <input type="date" class="form-control" name="q7" placeholder="Groom's DOB:">
+        </div>
+        <div class="form-group">
+            <input type="file" class="form-control" name="uploadfile" placeholder="Uploadfile"><br><br>
+            
+        </div>
+        <div class="form-btn">
+            <input type="submit" class="btn btn-primary" value="Register"  name="submit">
+        </div>
+        
+    </form>
+</div>
+
+</body>
+</html>
