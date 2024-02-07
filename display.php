@@ -30,12 +30,13 @@ $total = mysqli_num_rows($data);
 if($total!=0){
     ?>
     <h2 align="center">Displaying User List</h2>
-    <table border="1" cellspacing="7" width="75%">
+    <table border="1" cellspacing="7" width="100%">
         <tr>
         <th width="10%">Username</th>
          <th width="10%">Password</th>
          <th width="10%">EmailID</th>
          <th width="10">Mobile No.</th>
+         <th width="10">Operation</th>
 </tr>
 
 
